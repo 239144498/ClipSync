@@ -1,0 +1,5 @@
+uvicorn
+fastapi
+paho-mqtt
+pyperclip
+python-multipart
