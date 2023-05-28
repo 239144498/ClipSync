@@ -140,7 +140,8 @@ python main.py
 > Every time you spend money, you're casting a vote for the kind of world you want. -- Anna Lappe
 
 <a href="https://ik.imagekit.io/naihe/pay/hbm.jpg"><img src="https://ik.imagekit.io/naihe/pay/hbm.jpg" alt="stream.png" border="0" width="400px" height="220px" /></a>
-<a href="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg"><img src="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg" alt="stream.png" border="0" width="400px" height="220px" /></a>
+<a href="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg"><img src="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg" alt="stream.png" border="0" width="400px" height="220px" /></a>  
+
 题外话：赞助的时候可以留言，留言内容将被展示在 [赞助列表画面](https://github.com/239144498/ClipSync/wiki/Donation-List) 。如果赞助图片未能正常显示，请访问： [https://ik.imagekit.io/naihe/pay/hbm.jpg](https://ik.imagekit.io/naihe/pay/hbm.jpg)
 **你的`star`或者`赞助`是我长期维护此项目的动力所在，由衷感谢每一位支持者，“每一次你花的钱都是在为你想要的世界投票”。 另外，将本项目推荐给更多的人，也是一种支持的方式，用的人越多更新的动力越足。**
 
