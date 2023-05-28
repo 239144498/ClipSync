@@ -90,10 +90,10 @@ pip install pywin32
 
 *sudo install和 pip install都是二选一*
 
-`sudo apt-get install xsel`来安装xsel工具。
-`sudo apt-get install xclip`来安装xclip工具。
-`pip install gtk`来安装gtk Python模块。
-`pip install PyQt5`来安装PyQt5 Python模块。
+`sudo apt-get install xsel`来安装xsel工具。  
+`sudo apt-get install xclip`来安装xclip工具。  
+`pip install gtk`来安装gtk Python模块。  
+`pip install PyQt5`来安装PyQt5 Python模块。  
 
 ### MacOS
 
