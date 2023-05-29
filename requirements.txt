@@ -3,3 +3,5 @@ fastapi
 paho-mqtt
 pyperclip
 python-multipart
+loguru
+jinja2

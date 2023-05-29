@@ -1,5 +1,10 @@
-ClipSync
---------
+<div align="center">
+
+![logo.svg](icon%2Flogo.svg)
+<h3>ClipSync</h3>
+
+Documentation: [English version](https://github.com/239144498/ClipSync/blob/main/README_EN.md) | 中文版
+</div>
 
 ### 📃 引言
 

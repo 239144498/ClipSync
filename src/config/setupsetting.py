@@ -14,6 +14,9 @@ from src.utils.tools import _get_platform
 ROOT_DIR = Path(__file__).parent.parent.parent
 SRC = ROOT_DIR / "src"
 CONFIG = SRC / "config"
+static_url_prefix: str = '/static'
+static_dir = ROOT_DIR / 'static'
+jinja2_templates_dir = ROOT_DIR / 'src/templates'
 
 print("根目录：", ROOT_DIR)
 hostname = socket.gethostname()
