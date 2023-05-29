@@ -8,7 +8,7 @@ import logging
 import configparser
 
 from typing import Optional
-from src.config.setupsetting import ROOT_DIR, CONFIG
+from app.config.setupsetting import ROOT_DIR, CONFIG
 
 
 class Config:

@@ -10,7 +10,7 @@ from typing import Union, List
 from pydantic import BaseModel, Field, validator
 from pathlib import Path
 
-from src.config.setupsetting import sysuuid, sysmodel, hostname
+from app.config.setupsetting import sysuuid, sysmodel, hostname
 
 
 class Clip(BaseModel):

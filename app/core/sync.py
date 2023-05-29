@@ -2,9 +2,9 @@
 import json
 import paho.mqtt.client as mqtt
 
-from src.config.conf import conf
-from src.config.setupsetting import sysuuid
-from src.core.clip import Clipboard
+from app.config.conf import conf
+from app.config.setupsetting import sysuuid
+from app.core.clip import Clipboard
 
 
 class ClipSync:

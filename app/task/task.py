@@ -9,10 +9,10 @@ import time
 
 from threading import Thread
 from loguru import logger
-from src.config.conf import conf
-from src.core.sync import client
-from src.enums.model import DataType
-from src.schemas.model import Clip
+from app.config.conf import conf
+from app.core.sync import client
+from app.enums.model import DataType
+from app.schemas.model import Clip
 
 
 def log_startup():

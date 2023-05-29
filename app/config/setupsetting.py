@@ -7,16 +7,16 @@
 import uuid
 import socket
 from pathlib import Path
-from src.enums.model import Platform
-from src.utils.tools import _get_platform
+from app.enums.model import Platform
+from app.utils.tools import _get_platform
 
 
 ROOT_DIR = Path(__file__).parent.parent.parent
-SRC = ROOT_DIR / "src"
+SRC = ROOT_DIR / "app"
 CONFIG = SRC / "config"
 static_url_prefix: str = '/static'
 static_dir = ROOT_DIR / 'static'
-jinja2_templates_dir = ROOT_DIR / 'src/templates'
+jinja2_templates_dir = ROOT_DIR / 'templates'
 
 print("根目录：", ROOT_DIR)
 hostname = socket.gethostname()

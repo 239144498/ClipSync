@@ -7,7 +7,7 @@
 import subprocess
 import time
 
-from src.config.setupsetting import sysname, Platform, ROOT_DIR
+from app.config.setupsetting import sysname, Platform, ROOT_DIR
 
 
 class ClipboardError(Exception):

@@ -9,11 +9,11 @@ from fastapi.params import Body
 from starlette.requests import Request
 from starlette.responses import HTMLResponse, JSONResponse, RedirectResponse
 
-from src.config.conf import conf
-from src.core.sync import client
-from src.enums.model import DataType
-from src.models.response import Response200, Response400
-from src.schemas.model import Clip
+from app.config.conf import conf
+from app.core.sync import client
+from app.enums.model import DataType
+from app.models.response import Response200, Response400
+from app.schemas.model import Clip
 
 
 router = APIRouter(tags=['剪贴板服务'])

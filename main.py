@@ -5,12 +5,12 @@
 # @File    : main.py
 # @Software: PyCharm
 import uvicorn
-from src.config.conf import conf
+from app.config.conf import conf
 
 
 def main():
     config = conf.get_config().config
-    uvicorn.run("src.service:app", host=config.get('API_SERVER', 'host'), port=config.getint('API_SERVER', 'port'))
+    uvicorn.run("app.service:app", host=config.get('API_SERVER', 'host'), port=config.getint('API_SERVER', 'port'))
 
 
 if __name__ == '__main__':
