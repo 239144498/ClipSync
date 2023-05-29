@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="{{ url_for('static', path='/css/index.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>
+            <img src="{{ url_for('static', path='/img/logo.svg') }}" alt="logo">
+            {{ request.app.title }} {{ request.app.version }}</h1>
+        <h2>{{ request.app.description }}</h2>
+        <a href="/docs" class="docs"><b>docs 文档</b></a>
+        <a href="/redoc" class="docs"><b>redoc 文档</b></a>
+    </div>
+</body>
+</html>
