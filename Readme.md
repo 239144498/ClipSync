@@ -1,6 +1,6 @@
 <div align="center">
 
-![logo.svg](static/img/logo.svg)
+![logo.svg](static/img/logo.png)
 <h3>ClipSync</h3>
 
 Documentation: [English version](https://github.com/239144498/ClipSync/blob/main/README_EN.md) | 中文版
