@@ -11,7 +11,7 @@ from app.enums.model import Platform
 from app.utils.tools import _get_platform
 
 
-ROOT_DIR = Path(__file__).parent.parent.parent
+ROOT_DIR = Path(__file__).parent.parent.parent.resolve()
 SRC = ROOT_DIR / "app"
 CONFIG = SRC / "config"
 static_url_prefix: str = '/static'

@@ -43,7 +43,6 @@ class ClipSync:
     # 在连接断开时的 callback，打印 result code
     def on_disconnect(self, client, userdata, rc):
         print(f"断开连接返回结果: {rc}")
-        self.client.loop_stop()
 
     # 用于响应服务器端 PUBLISH 消息的 callback，打印消息主题和内容
     def on_message(self, client, userdata, msg):
@@ -71,10 +70,6 @@ class ClipSync:
         self.reduplicates[payload["id"]] = payload["value"]
         result, mid = self.client.publish(topic, json.dumps(payload), qos, retain, properties)
         self.unacked_sub.append(mid)
-
-    def __del__(self):
-        self.client.loop_stop()
-        self.client.disconnect()
 
 
 client = ClipSync()
