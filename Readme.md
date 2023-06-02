@@ -52,9 +52,7 @@ Documentation: [English version](https://github.com/239144498/ClipSync/blob/main
 剪贴板全平台同步服务采用MQTT通信协议，可以很好做到多设备连接并且同步剪贴板内容。
 ClipSync服务主打无感同步，不需要用户手动操作，操作配置界面在Web端进行。
 
-我创建了 ClipSync群组，可供交流、测试、反馈，请扫码加入：
 
-<a href="http://typora.datastream.tebi.io/453484057802934249.jpg"><img src="http://typora.datastream.tebi.io/453484057802934249.jpg" alt="stream.png" border="0" width="300px" height="450px" /></a>
 
 🎁ClipSync优势
 --------------
