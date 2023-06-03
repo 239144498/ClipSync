@@ -8,6 +8,8 @@ Documentation: [English version](https://github.com/239144498/ClipSync/blob/main
 
 </div>
 
+
+
 ### 📃 引言
 
 这个项目是为了解决不同平台同步剪贴板数据过于繁琐的问题，很多人应该都深有体会。
