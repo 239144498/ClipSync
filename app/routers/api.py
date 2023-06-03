@@ -43,6 +43,14 @@ async def pbpaste():
         return Response400(msg="粘贴失败")
 
 
+@router.get("/history", summary='历史剪贴板', response_class=JSONResponse)
+async def history():
+    try:
+        return Response200(data=list(client.clip_history()))
+    except Exception as error:
+        return Response400(msg="获取历史剪贴板失败")
+
+
 @router.get('/favicon.ico', include_in_schema=False)
 async def home():
     return RedirectResponse('/static/img/logo.png')

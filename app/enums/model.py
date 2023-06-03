@@ -20,7 +20,3 @@ class DataType(Enum):
     TEXT = 1
     IMAGE = 2
     FILE = 3
-
-
-
-

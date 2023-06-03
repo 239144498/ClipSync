@@ -5,12 +5,15 @@
 # @File    : api.py
 # @Software: PyCharm
 from fastapi import FastAPI
+from loguru import logger
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from app.config.setupsetting import static_url_prefix, static_dir, jinja2_templates_dir
+from app.config.setupsetting import static_url_prefix, static_dir, jinja2_templates_dir, loguru_config
 from app.routers.api import router
 from app.task.task import log_startup
+
+logger.configure(**loguru_config)
 
 app = FastAPI(title="ClipSync")
 

@@ -16,7 +16,7 @@ from app.schemas.model import Clip
 
 
 def log_startup():
-    logger.info(f"ClipSync startup at {datetime.datetime.now()}")
+    logger.info(f"ClipSync startup")
 
 
 def comparison():

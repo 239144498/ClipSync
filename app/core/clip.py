@@ -6,7 +6,7 @@
 # @Software: PyCharm
 import subprocess
 import time
-
+from loguru import logger
 from app.config.setupsetting import sysname, Platform, ROOT_DIR
 
 
@@ -51,10 +51,10 @@ class Clipboard:
                 if e.winerror == 5:  # Access denied
                     time.sleep(0.1)  # Wait for a short time and try again
                 else:
-                    raise e
+                    logger.error(e)
         elif sysname == Platform.IOS:
             try:
-                process = subprocess.run(["pbcount"], capture_output=True, text=True, check=True)
+                process = subprocess.run([ROOT_DIR / "IOS/pbcount/pbcount"], capture_output=True, text=True, check=True)
                 return int(process.stdout)
             except subprocess.CalledProcessError as error:
                 print(f"Error occurred while counting from Clipboard: {error}")

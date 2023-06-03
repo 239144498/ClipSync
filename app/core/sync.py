@@ -2,6 +2,7 @@
 import json
 import paho.mqtt.client as mqtt
 
+from collections import deque
 from app.config.conf import conf
 from app.config.setupsetting import sysuuid
 from app.core.clip import Clipboard
@@ -17,7 +18,7 @@ class ClipSync:
         self.client.on_disconnect = self.on_disconnect
         self.client.on_message = self.on_message
         self.client.on_subscribe = self.on_subscribe
-
+        self.deque = deque(maxlen=10)   #
         self.unacked_sub = []  # 未获得服务器响应的订阅消息 id 列表
         self.setup()
         self.reduplicates = {}
@@ -33,6 +34,9 @@ class ClipSync:
         self.client.loop_start()
         # client.loop_forever()
 
+    def clip_history(self):
+        return self.deque
+
     # 用于响应服务器端 CONNACK 的 callback，如果连接正常建立，rc 值为 0
     def on_connect(self, client, userdata, flags, rc):
         print(f"MQTT连接结果: {'正常' if rc == 0 else '异常'}")
@@ -42,15 +46,18 @@ class ClipSync:
 
     # 在连接断开时的 callback，打印 result code
     def on_disconnect(self, client, userdata, rc):
-        print(f"断开连接返回结果: {rc}")
+        if rc == 7:
+            pass
+            # print(f"断开连接返回结果: {rc}")
 
     # 用于响应服务器端 PUBLISH 消息的 callback，打印消息主题和内容
     def on_message(self, client, userdata, msg):
         data = json.loads(msg.payload)
         if data["id"] != sysuuid:
             # 在这里处理接收到的消息，例如：过滤、分发、回调、确认、加密、解密、签名等
-            print(f"收到 【{data['name']}】 的信息 <<< {data['value']}")
-            self.reduplicates[data["id"]] = data["value"]
+            print(f"收到 【{data['name']}】 发送的信息 >>> {data['value']}")
+            self.reduplicates[sysuuid] = data["value"]
+            self.deque.append(data)
             self.clip.copy(data["value"])
 
     # 在订阅获得服务器响应后，从为响应列表中删除该消息 id
@@ -63,9 +70,10 @@ class ClipSync:
 
     # 订阅单个主题
     def publish(self, topic, payload, qos=0, retain=False, properties=None):
-        if self.reduplicates.get(payload["id"]) == payload["value"]:
+        if not payload["value"] or self.reduplicates.get(sysuuid) == payload["value"]:
             return None
         # 在这里发送消息，例如：消息队列、消息持久化、消息发布、消息推送等
+        self.deque.append(payload)
         print(f"【{payload['name']}】发送信息 >>> {payload['value']}")
         self.reduplicates[payload["id"]] = payload["value"]
         result, mid = self.client.publish(topic, json.dumps(payload), qos, retain, properties)

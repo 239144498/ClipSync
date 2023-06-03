@@ -1,9 +1,11 @@
-<div align="center">
+span
 
 ![logo](https://raw.githubusercontents.com/239144498/ClipSync/master/static/img/logo.svg)
+
 <h3>ClipSync</h3>
 
 Documentation: [English version](https://github.com/239144498/ClipSync/blob/main/README_EN.md) | 中文版
+
 </div>
 
 ### 📃 引言
@@ -115,7 +117,8 @@ pip install -r requests
 
 python main.py
 
-# 后台运行：根据使用的操作系统，搜索关键字 python程序+后台运行。
+# 后台运行：根据使用的操作系统，搜索关键字 python程序+后台运行。  
+例子：nohup python main.py > clipsync.log 2>&1 &
 ```
 
 ### 📢注意事项
@@ -149,7 +152,7 @@ python main.py
 <a href="https://ik.imagekit.io/naihe/pay/hbm.jpg"><img src="https://ik.imagekit.io/naihe/pay/hbm.jpg" alt="stream.png" border="0" width="400px" height="220px" /></a>
 <a href="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg"><img src="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg" alt="stream.png" border="0" width="400px" height="220px" /></a>  
 
-题外话：赞助的时候可以留言，留言内容将被展示在 [赞助列表画面](https://github.com/239144498/ClipSync/wiki/Donation-List) 。如果赞助图片未能正常显示，请访问： [https://ik.imagekit.io/naihe/pay/hbm.jpg](https://ik.imagekit.io/naihe/pay/hbm.jpg)  
+题外话：赞助的时候可以留言，留言内容将被展示在 [赞助列表画面](https://github.com/239144498/ClipSync/wiki/Donation-List) 。如果赞助图片未能正常显示，请访问： [https://ik.imagekit.io/naihe/pay/hbm.jpg](https://ik.imagekit.io/naihe/pay/hbm.jpg)
 **你的`star`或者`赞助`是我长期维护此项目的动力所在，由衷感谢每一位支持者，“每一次你花的钱都是在为你想要的世界投票”。 另外，将本项目推荐给更多的人，也是一种支持的方式，用的人越多更新的动力越足。**
 
 ### 🌚 作者
@@ -171,6 +174,7 @@ python main.py
 * [x] 解决通信闭环传递
 * [x] API接口扩展
 * [x] 优化多设备通信连接
+* [x] 历史记录
 
 ### 待完成
 
@@ -178,7 +182,6 @@ python main.py
 * [ ] 更多同步格式
 * [ ] 端到端加密
 * [ ] 离线信息同步
-* [ ] 历史记录
 * [ ] 待定...
 
 ### 🥝 开源协议
