@@ -1,4 +1,4 @@
-span
+<div align="center">
 
 ![logo](https://raw.githubusercontents.com/239144498/ClipSync/master/static/img/logo.svg)
 
@@ -54,8 +54,6 @@ Documentation: [English version](https://github.com/239144498/ClipSync/blob/main
 剪贴板全平台同步服务采用MQTT通信协议，可以很好做到多设备连接并且同步剪贴板内容。
 ClipSync服务主打无感同步，不需要用户手动操作，操作配置界面在Web端进行。
 
-
-
 🎁ClipSync优势
 --------------
 
@@ -99,10 +97,10 @@ pip install pywin32
 
 *sudo install和 pip install都是二选一*
 
-`sudo apt-get install xsel`来安装xsel工具。  
-`sudo apt-get install xclip`来安装xclip工具。  
-`pip install gtk`来安装gtk Python模块。  
-`pip install PyQt5`来安装PyQt5 Python模块。  
+`sudo apt-get install xsel`来安装xsel工具。
+`sudo apt-get install xclip`来安装xclip工具。
+`pip install gtk`来安装gtk Python模块。
+`pip install PyQt5`来安装PyQt5 Python模块。
 
 ### MacOS
 
@@ -150,7 +148,7 @@ python main.py
 > Every time you spend money, you're casting a vote for the kind of world you want. -- Anna Lappe
 
 <a href="https://ik.imagekit.io/naihe/pay/hbm.jpg"><img src="https://ik.imagekit.io/naihe/pay/hbm.jpg" alt="stream.png" border="0" width="400px" height="220px" /></a>
-<a href="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg"><img src="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg" alt="stream.png" border="0" width="400px" height="220px" /></a>  
+<a href="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg"><img src="http://typora.datastream.tebi.io/68747470733a2f2f73322e617831782e636f6d2f323032302f30312f33312f3133503863462e6a7067.jpg" alt="stream.png" border="0" width="400px" height="220px" /></a>
 
 题外话：赞助的时候可以留言，留言内容将被展示在 [赞助列表画面](https://github.com/239144498/ClipSync/wiki/Donation-List) 。如果赞助图片未能正常显示，请访问： [https://ik.imagekit.io/naihe/pay/hbm.jpg](https://ik.imagekit.io/naihe/pay/hbm.jpg)
 **你的`star`或者`赞助`是我长期维护此项目的动力所在，由衷感谢每一位支持者，“每一次你花的钱都是在为你想要的世界投票”。 另外，将本项目推荐给更多的人，也是一种支持的方式，用的人越多更新的动力越足。**
